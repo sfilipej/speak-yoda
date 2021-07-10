@@ -1,3 +1,11 @@
-console.log('alo');
+const request = require("superagent");
 
-https://api.funtranslations.com/translate/yoda.json?text=Master%20Obiwan%20has%20lost%20a%20planet.
+// callback
+request
+  .post('http://api.funtranslations.com/translate/yoda')
+  .send({ text: 'Master Obiwan has lost a planet'}) // sends a JSON post body
+  .set('X-API-Key', 'foobar')
+  .set('accept', 'json')
+  .end((err, res) => {
+    console.log(res.body);
+  });
