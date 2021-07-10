@@ -1,0 +1,22 @@
+{
+  "name": "speak-yoda",
+  "version": "1.0.0",
+  "description": "Transforms text into Yoda speaking",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfilipej/speak-yoda.git"
+  },
+  "author": "João Filipe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sfilipej/speak-yoda/issues"
+  },
+  "homepage": "https://github.com/sfilipej/speak-yoda#readme",
+  "dependencies": {
+    "superagent": "^6.1.0"
+  }
+}
