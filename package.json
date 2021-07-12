@@ -2,10 +2,10 @@
   "name": "speak-yoda",
   "version": "1.0.0",
   "description": "Transforms text into Yoda speaking",
-  "main": "npx -p @babel/core -p @babel/node babel-node --presets @babel/preset-env index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "npx -p @babel/core -p @babel/node babel-node --presets @babel/preset-env index.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,20 @@
   },
   "homepage": "https://github.com/sfilipej/speak-yoda#readme",
   "dependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.7",
     "@babel/preset-env": "^7.14.7",
+    "@babel/register": "^7.14.5",
+    "babel-node": "0.0.1-security",
+    "babel-preset-env": "^1.7.0",
     "superagent": "^6.1.0"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.14.5"
+  },
+  "babel":{
+    "presets":[
+      "@babel/preset-env"
+    ]
   }
 }
