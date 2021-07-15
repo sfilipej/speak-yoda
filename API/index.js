@@ -1,12 +1,16 @@
-const request = require("superagent");
+import axios from "axios";
+/* import { SuperAgent } from "superagent"; */
 
 // callback
 const API = (frase) => {
-    request
-        .post('http://api.funtranslations.com/translate/yoda')
-        .send(frase)
-        .end((err, res)=>{console.log(res.body);});
+    return
+    axios
+        .post('http://api.funtranslations.com/translate/yoda', {text: frase})
+        .then(response => {
+            console.log(response.body);
+        })
+        .catch('Erro!');
+        
 };
     
-
 export { API };

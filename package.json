@@ -22,15 +22,17 @@
     "@babel/node": "^7.14.7",
     "@babel/preset-env": "^7.14.7",
     "@babel/register": "^7.14.5",
+    "axios": "^0.21.1",
     "babel-node": "0.0.1-security",
     "babel-preset-env": "^1.7.0",
+    "prompts": "^2.4.1",
     "superagent": "^6.1.0"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.14.5"
   },
-  "babel":{
-    "presets":[
+  "babel": {
+    "presets": [
       "@babel/preset-env"
     ]
   }
